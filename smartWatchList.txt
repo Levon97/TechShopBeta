@@ -1,0 +1,4 @@
+AppleWatch 3,300,15.0,y,200.0
+AppleWatch 4,1000,20.0,y,400.0
+Xiaomi mi band,200,20.0,n,30.0
+galaxy watch,1200,20.0,y,600.0

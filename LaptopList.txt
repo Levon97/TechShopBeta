@@ -1,0 +1,7 @@
+Samsung x1,intel i9,geforce gtx1050,512,16,y,15.0,700.99
+MacBook Pro 13,i5,AMD,2048,12,y,13.0,1500.0
+MacBook Pro 15,i5,AMD,2048,24,y,15.0,2299.99
+Dell XPS 15,i7,RTX2060,1024,32,y,15.0,2300.0
+Asus vivobook,AMD ryzen 5,onboard,512,16,n,15.0,1000.0
+Lenovo Thinkpad,i5,onboard,700,8,n,15.6,499.0
+Asus predator,i9,RTX3080,4096,64,y,17.0,5000.0
