@@ -1,5 +1,10 @@
 package service;
 
+import sellersService.DesktopSeller;
+import sellersService.LaptopSeller;
+import sellersService.PhoneService;
+import sellersService.SmartWatchSeller;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -87,7 +92,7 @@ public class Menu {
             switch (j) {
                 case 1:
                     try {
-                        PCSeller.printLaptopInfo();
+                        LaptopSeller.printLaptopInfo();
                         System.out.println("End of the list");
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -101,28 +106,28 @@ public class Menu {
                     System.out.println("Enter the other limit");
                     b = s.nextDouble();
                     try {
-                        PCSeller.getByPrice(a, b);
+                        LaptopSeller.getByPrice(a, b);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 3:
                     try {
-                        PCSeller.getMostExpensiveLaptop().printLaptopInfo();
+                        LaptopSeller.getMostExpensiveLaptop().printLaptopInfo();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 4:
                     try {
-                        PCSeller.getCheapestLaptop().printLaptopInfo();
+                        LaptopSeller.getCheapestLaptop().printLaptopInfo();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 5:
                     try {
-                       PCSeller.writeLaptop(PCSeller.createLaptop());
+                       LaptopSeller.writeLaptop(LaptopSeller.createLaptop());
                         System.out.println("Device added to list.");
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -149,7 +154,7 @@ public class Menu {
             switch (j) {
                 case 1:
                     try {
-                        PCSeller.printDesktopInfo();
+                        DesktopSeller.printDesktopInfo();
                         System.out.println("End of the list");
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -157,7 +162,7 @@ public class Menu {
                     break;
                 case 2:
                     try {
-                        PCSeller.writeDesktop(PCSeller.createDesktop());
+                        DesktopSeller.writeDesktop(DesktopSeller.createDesktop());
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -187,7 +192,7 @@ public class Menu {
             switch (j) {
                 case 1:
                     try {
-                        MobDevSeller.printPhoneInfo();
+                        PhoneService.printPhoneInfo();
                         System.out.println("End of the list");
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -201,28 +206,28 @@ public class Menu {
                     System.out.println("Enter the other limit");
                     b = s.nextDouble();
                     try {
-                        MobDevSeller.getByPricePhone(a, b);
+                        PhoneService.getByPricePhone(a, b);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 3:
                     try {
-                        MobDevSeller.getMostExpensivePhone().printPhoneInfo();
+                        PhoneService.getMostExpensivePhone().printPhoneInfo();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 4:
                     try {
-                        MobDevSeller.getCheapestPhone().printPhoneInfo();
+                        PhoneService.getCheapestPhone().printPhoneInfo();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 5:
                     try {
-                        MobDevSeller.write(MobDevSeller.createPhone());
+                        PhoneService.write(PhoneService.createPhone());
                         System.out.println("Device added to list.");
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -252,7 +257,7 @@ public class Menu {
             switch (j) {
                 case 1:
                     try {
-                        MobDevSeller.printWatchInfo();
+                        SmartWatchSeller.printWatchInfo();
                         System.out.println("End of the list");
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -266,28 +271,28 @@ public class Menu {
                     System.out.println("Enter the other limit");
                     b = s.nextDouble();
                     try {
-                        MobDevSeller.getByPriceWatch(a, b);
+                        SmartWatchSeller.getByPriceWatch(a, b);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 3:
                     try {
-                        MobDevSeller.getMostExpensiveWatch().printWatchInfo();
+                        SmartWatchSeller.getMostExpensiveWatch().printWatchInfo();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 4:
                     try {
-                        MobDevSeller.getCheapestWatch().printWatchInfo();
+                        SmartWatchSeller.getCheapestWatch().printWatchInfo();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 5:
                     try {
-                        MobDevSeller.write(MobDevSeller.createWatch());
+                        SmartWatchSeller.write(SmartWatchSeller.createWatch());
                         System.out.println("Device added to list.");
                     } catch (IOException e) {
                         e.printStackTrace();

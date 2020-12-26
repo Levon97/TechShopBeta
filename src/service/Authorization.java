@@ -54,7 +54,7 @@ public class Authorization {
         }
         user.seteMail(email);
 
-        System.out.println("Enter new Password. (length>=8, 2 uppercase letters, min 3 numbers):");
+        System.out.println("Enter new Password. (length>=8, 2 uppercase letters,3 numbers):");
         String password = ss.next();
 
         while (!isValid(password, PASSWORD_PATTERN)) {
